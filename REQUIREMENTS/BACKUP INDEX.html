@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Prior Approval Form - Ulster University</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <header class="mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Crect width='60' height='60' fill='%23B50000'/%3E%3Ctext x='50%25' y='50%25' font-size='24' fill='white' text-anchor='middle' dominant-baseline='middle'%3EUU%3C/text%3E%3C/svg%3E" alt="Ulster University Logo" class="me-3">
+                        <div>
+                            <h1 class="mb-0">Electronic Prior Approval Form</h1>
+                            <p class="text-muted mb-0">Ulster University - Student Travel Authorization</p>
+                        </div>
+                    </div>
+                    <div class="alert alert-info" role="alert">
+                        <strong>Important:</strong> Please complete this form before making any travel arrangements including flights and/or overnight stays. Approval must be obtained prior to booking.
+                    </div>
+                </header>
+
+                <form id="priorApprovalForm" novalidate>
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h2 class="h5 mb-0">Section 1: Student Information</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="studentId" class="form-label">Student ID <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="studentId" name="studentId" required>
+                                    <div class="invalid-feedback">Please provide your student ID.</div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="studentName" class="form-label">Full Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="studentName" name="studentName" required>
+                                    <div class="invalid-feedback">Please provide your full name.</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <div class="invalid-feedback">Please provide a valid email address.</div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="phone" class="form-label">Phone Number <span class="text-danger">*</span></label>
+                                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                                    <div class="invalid-feedback">Please provide your phone number.</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="course" class="form-label">Course/Programme <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="course" name="course" required>
+                                    <div class="invalid-feedback">Please provide your course/programme.</div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="supervisor" class="form-label">Academic Supervisor</label>
+                                    <input type="text" class="form-control" id="supervisor" name="supervisor">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h2 class="h5 mb-0">Section 2: Travel Details</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="destination" class="form-label">Destination <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="destination" name="destination" placeholder="City, Country" required>
+                                    <div class="invalid-feedback">Please provide the destination.</div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="purpose" class="form-label">Purpose of Travel <span class="text-danger">*</span></label>
+                                    <select class="form-select" id="purpose" name="purpose" required>
+                                        <option value="">Select purpose...</option>
+                                        <option value="conference">Conference/Workshop</option>
+                                        <option value="research">Research/Fieldwork</option>
+                                        <option value="internship">Internship/Placement</option>
+                                        <option value="competition">Competition/Event</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <div class="invalid-feedback">Please select the purpose of travel.</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="departureDate" class="form-label">Departure Date <span class="text-danger">*</span></label>
+                                    <input type="date" class="form-control" id="departureDate" name="departureDate" required>
+                                    <div class="invalid-feedback">Please select the departure date.</div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="returnDate" class="form-label">Return Date <span class="text-danger">*</span></label>
+                                    <input type="date" class="form-control" id="returnDate" name="returnDate" required>
+                                    <div class="invalid-feedback">Please select the return date.</div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="purposeDetails" class="form-label">Purpose Details <span class="text-danger">*</span></label>
+                                <textarea class="form-control" id="purposeDetails" name="purposeDetails" rows="3" required placeholder="Please provide detailed information about the purpose of your travel..."></textarea>
+                                <div class="invalid-feedback">Please provide details about the purpose of travel.</div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="overnightStay" name="overnightStay">
+                                    <label class="form-check-label" for="overnightStay">
+                                        This trip includes an overnight stay
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h2 class="h5 mb-0">Section 3: Cost Breakdown</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="alert alert-warning" role="alert">
+                                <strong>Note:</strong> Please provide a detailed breakdown of all costs. All amounts should be in GBP (£).
+                            </div>
+                            
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="travelToCost" class="form-label">Travel to Destination <span class="text-danger">*</span></label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">£</span>
+                                        <input type="number" class="form-control" id="travelToCost" name="travelToCost" step="0.01" min="0" required>
+                                    </div>
+                                    <small class="form-text text-muted">Cost of travel from place of study to destination</small>
+                                    <div class="invalid-feedback">Please provide the travel cost.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="travelFromCost" class="form-label">Travel from Destination <span class="text-danger">*</span></label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">£</span>
+                                        <input type="number" class="form-control" id="travelFromCost" name="travelFromCost" step="0.01" min="0" required>
+                                    </div>
+                                    <small class="form-text text-muted">Cost of travel from destination back to place of study</small>
+                                    <div class="invalid-feedback">Please provide the return travel cost.</div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="accommodationCost" class="form-label">Accommodation Cost</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">£</span>
+                                        <input type="number" class="form-control" id="accommodationCost" name="accommodationCost" step="0.01" min="0" value="0">
+                                    </div>
+                                    <small class="form-text text-muted">Total accommodation costs (if applicable)</small>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="mealsCost" class="form-label">Meals Cost</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">£</span>
+                                        <input type="number" class="form-control" id="mealsCost" name="mealsCost" step="0.01" min="0" value="0">
+                                    </div>
+                                    <small class="form-text text-muted">Estimated meals and subsistence costs</small>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="otherCosts" class="form-label">Other Costs</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">£</span>
+                                        <input type="number" class="form-control" id="otherCosts" name="otherCosts" step="0.01" min="0" value="0">
+                                    </div>
+                                    <small class="form-text text-muted">Any other expenses (visa, insurance, etc.)</small>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="totalCost" class="form-label">Total Cost <span class="text-danger">*</span></label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">£</span>
+                                        <input type="number" class="form-control" id="totalCost" name="totalCost" step="0.01" min="0" readonly>
+                                    </div>
+                                    <small class="form-text text-muted">Total will be calculated automatically</small>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="costBreakdown" class="form-label">Detailed Cost Breakdown <span class="text-danger">*</span></label>
+                                <textarea class="form-control" id="costBreakdown" name="costBreakdown" rows="4" required placeholder="Please provide a detailed breakdown of all costs, including item descriptions and amounts..."></textarea>
+                                <div class="invalid-feedback">Please provide a detailed cost breakdown.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="fundingSource" class="form-label">Funding Source <span class="text-danger">*</span></label>
+                                <select class="form-select" id="fundingSource" name="fundingSource" required>
+                                    <option value="">Select funding source...</option>
+                                    <option value="self">Self-funded</option>
+                                    <option value="university">University Funding</option>
+                                    <option value="grant">Research Grant</option>
+                                    <option value="scholarship">Scholarship</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div class="invalid-feedback">Please select the funding source.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h2 class="h5 mb-0">Section 4: Justification and Additional Information</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label for="justification" class="form-label">Justification for Travel <span class="text-danger">*</span></label>
+                                <textarea class="form-control" id="justification" name="justification" rows="4" required placeholder="Please explain why this travel is necessary and how it relates to your studies/research..."></textarea>
+                                <div class="invalid-feedback">Please provide justification for the travel.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="benefits" class="form-label">Expected Benefits <span class="text-danger">*</span></label>
+                                <textarea class="form-control" id="benefits" name="benefits" rows="3" required placeholder="Please describe the expected benefits of this travel for your academic/professional development..."></textarea>
+                                <div class="invalid-feedback">Please describe the expected benefits.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="additionalInfo" class="form-label">Additional Information</label>
+                                <textarea class="form-control" id="additionalInfo" name="additionalInfo" rows="3" placeholder="Any additional information you would like to provide..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h2 class="h5 mb-0">Section 5: Declaration</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="declaration" name="declaration" required>
+                                    <label class="form-check-label" for="declaration">
+                                        I confirm that I have not made any travel arrangements (including flights and/or accommodation) prior to receiving approval from the University. <span class="text-danger">*</span>
+                                    </label>
+                                    <div class="invalid-feedback">You must confirm this declaration to proceed.</div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="accuracy" name="accuracy" required>
+                                    <label class="form-check-label" for="accuracy">
+                                        I confirm that all information provided in this form is accurate and complete. <span class="text-danger">*</span>
+                                    </label>
+                                    <div class="invalid-feedback">You must confirm the accuracy of information.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between mb-4">
+                        <button type="button" class="btn btn-secondary" id="saveDraft">Save as Draft</button>
+                        <div>
+                            <button type="reset" class="btn btn-outline-danger me-2">Reset Form</button>
+                            <button type="submit" class="btn btn-primary">Submit for Approval</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div id="successMessage" class="alert alert-success d-none" role="alert">
+                    <h4 class="alert-heading">Form Submitted Successfully!</h4>
+                    <p>Your Prior Approval Form has been submitted. You will receive a confirmation email shortly.</p>
+                    <hr>
+                    <p class="mb-0">Reference Number: <strong id="referenceNumber"></strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

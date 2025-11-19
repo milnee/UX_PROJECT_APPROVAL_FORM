@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application for Approval of Proposed Expenditure on a Visit or Course of Study - Ulster University</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <header class="text-center mb-4">
+                    <h1 class="mb-2">ULSTER UNIVERSITY</h1>
+                    <h2 class="h4 mb-4 fw-bold">APPLICATION FOR APPROVAL OF PROPOSED EXPENDITURE ON A VISIT OR COURSE OF STUDY</h2>
+                </header>
+
+                <form id="priorApprovalForm" novalidate>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="paNumber" class="form-label">PA Number</label>
+                                    <input type="text" class="form-control" id="paNumber" name="paNumber" maxlength="5" pattern="[0-9]{5}">
+                                    <small class="form-text text-muted">Enter 5-digit PA number</small>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="studentNumber" class="form-label">Student Number</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">B 0 0</span>
+                                        <input type="text" class="form-control" id="studentNumber" name="studentNumber" maxlength="5" pattern="[0-9]{5}">
+                                    </div>
+                                    <small class="form-text text-muted">Enter 5-digit student number</small>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                                <div class="invalid-feedback">Please provide your name.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                                <div class="invalid-feedback">Please provide a valid email address.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="schoolFacultyCampus" class="form-label">School, Faculty & Campus</label>
+                                <input type="text" class="form-control" id="schoolFacultyCampus" name="schoolFacultyCampus" required>
+                                <div class="invalid-feedback">Please provide your school, faculty and campus.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="placeOfVisit" class="form-label">Place of visit/course</label>
+                                <input type="text" class="form-control" id="placeOfVisit" name="placeOfVisit" required>
+                                <div class="invalid-feedback">Please provide the place of visit/course.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="purposeOfVisit" class="form-label">Purpose of visit/course</label>
+                                <input type="text" class="form-control" id="purposeOfVisit" name="purposeOfVisit" required>
+                                <div class="invalid-feedback">Please provide the purpose of visit/course.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Duration of visit/course</label>
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <label for="fromDate" class="form-label small">FROM</label>
+                                        <input type="date" class="form-control" id="fromDate" name="fromDate" required>
+                                        <div class="invalid-feedback">Please select the start date.</div>
+                                    </div>
+                                    <div class="col-md-2 text-center align-self-end pb-3">TO</div>
+                                    <div class="col-md-5">
+                                        <label for="toDate" class="form-label small">TO</label>
+                                        <input type="date" class="form-control" id="toDate" name="toDate" required>
+                                        <div class="invalid-feedback">Please select the end date.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4 bank-details-section">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Bank Details</h3>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="bankName" class="form-label">Bank Name</label>
+                                    <input type="text" class="form-control" id="bankName" name="bankName">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="branchAddress" class="form-label">Branch Address</label>
+                                    <input type="text" class="form-control" id="branchAddress" name="branchAddress">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="sortCode" class="form-label">Sort Code</label>
+                                    <input type="text" class="form-control" id="sortCode" name="sortCode" pattern="[0-9]{6}" maxlength="6">
+                                    <small class="form-text text-muted">6 digits</small>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="accountNumber" class="form-label">Account Number</label>
+                                    <input type="text" class="form-control" id="accountNumber" name="accountNumber">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="ibanNumber" class="form-label">IBAN Number (Non UK bank accounts only)</label>
+                                <input type="text" class="form-control" id="ibanNumber" name="ibanNumber">
+                            </div>
+                            <div class="mb-3">
+                                <label for="swiftBicCode" class="form-label">SWIFT/BIC CODE (Non UK bank accounts only)</label>
+                                <input type="text" class="form-control" id="swiftBicCode" name="swiftBicCode">
+                            </div>
+                            <div class="alert alert-secondary mb-0">
+                                <em>IBAN number and SWIFT/BIC code must be completed for ALL NON UK BANK accounts</em>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Estimated costs</h3>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 60%;">Item</th>
+                                            <th class="text-center" style="width: 20%;">£</th>
+                                            <th class="text-center" style="width: 20%;">p</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <label for="courseFee" class="form-label mb-0">Course Fee</label>
+                                            </td>
+                                            <td>
+                                                <input type="number" class="form-control cost-pounds" id="courseFee" name="courseFee" step="0.01" min="0" value="0">
+                                            </td>
+                                            <td>
+                                                <input type="number" class="form-control cost-pence" id="courseFeeP" name="courseFeeP" min="0" max="99" value="0">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="accommodation" class="form-label mb-0">Accommodation</label>
+                                            </td>
+                                            <td>
+                                                <input type="number" class="form-control cost-pounds" id="accommodation" name="accommodation" step="0.01" min="0" value="0">
+                                            </td>
+                                            <td>
+                                                <input type="number" class="form-control cost-pence" id="accommodationP" name="accommodationP" min="0" max="99" value="0">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="subsistence" class="form-label mb-0">Subsistence</label>
+                                            </td>
+                                            <td>
+                                                <input type="number" class="form-control cost-pounds" id="subsistence" name="subsistence" step="0.01" min="0" value="0">
+                                            </td>
+                                            <td>
+                                                <input type="number" class="form-control cost-pence" id="subsistenceP" name="subsistenceP" min="0" max="99" value="0">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="airBoatTravel" class="form-label mb-0">Air/Boat Travel</label>
+                                            </td>
+                                            <td>
+                                                <input type="number" class="form-control cost-pounds" id="airBoatTravel" name="airBoatTravel" step="0.01" min="0" value="0">
+                                            </td>
+                                            <td>
+                                                <input type="number" class="form-control cost-pence" id="airBoatTravelP" name="airBoatTravelP" min="0" max="99" value="0">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="railTravel" class="form-label mb-0">Rail Travel</label>
+                                            </td>
+                                            <td>
+                                                <input type="number" class="form-control cost-pounds" id="railTravel" name="railTravel" step="0.01" min="0" value="0">
+                                            </td>
+                                            <td>
+                                                <input type="number" class="form-control cost-pence" id="railTravelP" name="railTravelP" min="0" max="99" value="0">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="coachTaxiFares" class="form-label mb-0">Coach/Taxi Fares</label>
+                                            </td>
+                                            <td>
+                                                <input type="number" class="form-control cost-pounds" id="coachTaxiFares" name="coachTaxiFares" step="0.01" min="0" value="0">
+                                            </td>
+                                            <td>
+                                                <input type="number" class="form-control cost-pence" id="coachTaxiFaresP" name="coachTaxiFaresP" min="0" max="99" value="0">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="sundries" class="form-label mb-0">Sundries (please specify)</label>
+                                                <input type="text" class="form-control mt-1" id="sundriesSpec" name="sundriesSpec" placeholder="Specify sundries">
+                                            </td>
+                                            <td>
+                                                <input type="number" class="form-control cost-pounds" id="sundries" name="sundries" step="0.01" min="0" value="0">
+                                            </td>
+                                            <td>
+                                                <input type="number" class="form-control cost-pence" id="sundriesP" name="sundriesP" min="0" max="99" value="0">
+                                            </td>
+                                        </tr>
+                                        <tr class="table-secondary fw-bold">
+                                            <td>TOTAL</td>
+                                            <td>
+                                                <input type="text" class="form-control" id="totalPounds" name="totalPounds" readonly>
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control" id="totalPence" name="totalPence" readonly>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Cost Code</h3>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="costCode" class="form-label">Cost code</label>
+                                    <select class="form-select" id="costCode" name="costCode">
+                                        <option value="">Select cost code...</option>
+                                        <option value="T1020">T1020</option>
+                                        <option value="T1022">T1022</option>
+                                        <option value="T1022.5">T1022.5</option>
+                                        <option value="T1022.7">T1022.7</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="nominalCode" class="form-label">Nominal Code</label>
+                                    <select class="form-select" id="nominalCode" name="nominalCode">
+                                        <option value="">Select nominal code...</option>
+                                        <option value="80100">80100</option>
+                                        <option value="80200">80200</option>
+                                        <option value="80300">80300</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="signature" class="form-label">Signed</label>
+                                    <input type="text" class="form-control" id="signature" name="signature" required>
+                                    <div class="invalid-feedback">Please provide your signature.</div>
+                                    <small class="form-text text-muted">Applicant</small>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="signatureDate" class="form-label">Date</label>
+                                    <input type="date" class="form-control" id="signatureDate" name="signatureDate" required>
+                                    <div class="invalid-feedback">Please select the date.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Notes</h3>
+                            <ul class="mb-0">
+                                <li>Subsistence - a maximum of £25.00 per day;</li>
+                                <li>Hotel/Overnight Accommodation - a maximum of £120 per night;</li>
+                                <li>Nominal code - select from 80100, 80200, 80300;</li>
+                                <li>Cost code - select from T1020, T1022, T1022.5, T1022.7</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between mb-4">
+                        <button type="button" class="btn btn-secondary" id="saveDraft">Save as Draft</button>
+                        <div>
+                            <button type="reset" class="btn btn-outline-danger me-2">Reset Form</button>
+                            <button type="submit" class="btn btn-primary">Submit for Approval</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div id="successMessage" class="alert alert-success d-none" role="alert">
+                    <h4 class="alert-heading">Form Submitted Successfully!</h4>
+                    <p>Your Prior Approval Form has been submitted. You will receive a confirmation email shortly.</p>
+                    <hr>
+                    <p class="mb-0">Reference Number: <strong id="referenceNumber"></strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

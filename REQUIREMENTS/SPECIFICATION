@@ -1,0 +1,115 @@
+Page number
+1
+Deepika Nikam COM321 Coursework 2025/26
+1. Coursework overview
+Coursework 2: UX Project
+COM321 (71447) 2025/26
+Module Coordinator: Deepika Nikam
+A web form (or HTML form) is a place where users enter data or personal information that’s then sent to a
+server for processing. For example, users can share their name and email address to sign up for a newsletteror
+place an order. In this coursework students will design and build the front-end for a web form to capturethe
+information for the problem brief provided in Appendix 1. Students will then complete a video demonstrating
+a cognitive walkthrough evaluation of the web form.
+Deliverables [50 marks]
+1. Each student should upload a self-contained zip file of the web form to the COM321 Assessment area
+on Blackboard learn by 12 noon on Monday 8th December 2025. Include all necessary files. [30 marks]
+2. Each student should upload a 2-minute cognitive walkthrough evaluation video of the web form they
+have implemented to the COM321 Assessment area on Blackboard learn by 12 noon on Monday 8th
+December 2025.A video tutorial of the cognitive walkthrough method has been provided in the
+assessment folder in the module area on Blackboard Learn. Please remember that a cognitive
+walkthrough is not an overview of the features you have implemented, rather it is a formal evaluation
+technique to find usability issues - if you are unsure, please watch the video tutorial that has been
+provided. Make sure cognitive walkthrough evaluation video must answer the following key
+questions –
+• Is the effect of current action same as users’ goal?
+• Is action visible?
+• Will user recognise action as correct one?
+• Will user understand feedback? [20 marks]
+2. Coursework Rationale
+The project is a hands-on practical exercise on UX, Human-Centred Design and prototyping using a variety
+of tools. Fundamentally, this means that design begins by getting to know the intended users, their tasks,
+and the working context of their actions. Only then is the actual system design considered in terms of what
+it should look like, and how the design should be based on real people, real tasks, and real needs. Human-
+centred system design is not an academic process where some cookbook formula can be applied, nor is it an
+intuitive process where a programmer can sit in their office and think they know what the user and their
+tasks are. Rather, it is a hands-on process that requires students to identify actual users, talk to them about
+what tasks they are trying to do, and understand the entire context of their work. The design is then based
+on this information. Initial designs will be crude and problem-prone, and students will be expected to identify
+potential usability problems by continually evaluating the design. This is called Iterative Design.
+Most of the theory, techniques and skills required for this coursework will be covered in lectures and
+practical classes – however, some more advanced techniques that demonstrate excellence in this subject
+will require independent learning using the recommended reading texts and other resources suggested in
+the module area on Blackboard learn.
+In practical classes, students will complete several exercises using HTML5, CSS3, JavaScript/TypeScript,
+Bootstrap and React to implement interactive web applications. These exercises will provide the necessary
+base-level programming skills required to develop the interactive web form. It is not expected that the
+interactive web form is a fully functioning system – but the front-end user interface should work as expected
+Deepika Nikam COM321 Coursework 2025/26
+in the final product to demonstrate full UX functionality.
+Students are encouraged to work in groups during the requirements gathering phase of the project. Students
+can also work in groups to get feedback on their designs – but each student must design and implement their
+own solution to the problem brief. Group work encourages the development of skills useful in
+employment (cooperation, negotiation, compromise, leadership, delegation, etc.). Students also learn from
+each other. Students will have different ideas and contributions on the requirements, design and
+implementation stages; this combined input is essential for Human Centred Design and User eXperience and
+the project in COM321 offers students a unique opportunity to develop these skills.
+Deepika Nikam COM321 Coursework 2025/26
+This coursework adopts best practice in terms of current teaching pedagogies, utilising project-based
+learning1, group work2 and reflective pedagogy3.
+3. Coursework Description
+Using human-centred design techniques, students define the requirements of the system addressing the
+selected problem brief (see Appendix 1). Information architecture and design techniques will be used to
+devise and test initial designs. Students will decide on the final design and will implement an interactive web
+form. The following technologies are permitted: HTML5, CSS3, JavaScript, TypeScript, React and Bootstrap.
+No other web frameworks are permitted. Students are not permitted to use WYSIWYG editors such as
+Dreamweaver – they are expected to hand craft all code. All submissions will be inspected to ensure
+compliance with this requirement.
+Deliverables:
+a) A self-contained zip file of the final web form will be uploaded to Blackboard learn as an individual
+submission. The deadline for uploading is 12 noon on 8th December 2025.
+b) Each student will individually evaluate their final system using the expert-based cognitive
+walkthrough evaluation technique. This will take the form of an individual 2-minute video. Students
+may include voice overs, captions, annotations and refer to design documentation during the video.
+The deadline for uploading the video is 12 noon on 8th December 2025.
+Collaboration Policy: Discussion with fellow students is encouraged and will benefit you in understanding
+the material. Students may discuss concepts and/or ideas from lectures with anyone in the class. Students
+may discuss concepts and/or ideas from their requirements and application design. Each student must
+design and implement their own individual solution to the problem brief.
+All submissions will be monitored in line with university guidance. If there is any confusion about the
+plagiarism policy for this module, feel free to talk to me. Not understanding this policy is not an excuse for
+breaking it. Self-plagiarism is plagiarism under this policy. If a student includes text or graphics copied from
+other assignments, or projects or work they have completed elsewhere, they are required to make a note of
+this. The Ulster University policy on plagiarism4 will be strictly enforced.
+Project marking
+Interactive web application submissions will be marked in terms of the completeness of the final product in
+meeting the provided design brief. The 2-minute video will offer individual students the opportunity to
+demonstrate and evaluate the practical application of their knowledge of the developed system. The mark
+awarded will depend on critical analysis, technical and design complexity, solution originality, appropriate
+use of UX and cognitive walkthrough completeness. A rubric (see Appendix 2) will be used to calculate this
+mark.
+Formative feedback will be provided during the weekly practical classes on all aspects of the project.
+Summative feedback will be provided along with the marking rubric after the final project assessment.
+No extension to deadlines will be granted unless extenuating circumstances exist, and the university
+procedure5 has been followed correctly.
+1 Barron, B. J., Schwartz, D. L., Vye, N. J., Moore, A., Petrosino, A., Zech, L., & Bransford, J. D. (1998). Doing with understanding: Lessons
+from research on problem-and project-based learning. Journal of the learning sciences, 7(3-4), 271-311.
+2 Ballantine, J., & Larres, P. M. (2007). Cooperative learning: a pedagogy to improve students' generic skills?. Education+ Training.
+3 Richards, J. C., & Burns, A. (Eds.). (2012). The Cambridge guide to pedagogy and practice in second language teaching. Cambridge University
+Press.
+4 https://www.ulster.ac.uk/student/exams-and-appeals/policies-procedures
+5 https://www.ulster.ac.uk/student/exams-and-appeals/extenuating-circumstances
+Deepika Nikam COM321 Coursework 2025/26
+COM321 (71447) 2025/26
+Module Coordinator: Deepika Nikam
+Appendix 1. Problem Brief – Electronic Prior Approval Web Form
+The approval of student travel is required before any travel arrangements including a flight and/or an
+overnight stay are made, by submitting a Prior Approval to the University for authorisation. Students need
+to complete a detailed breakdown of the total cost involved including the travel to and from the place of
+study. The existing paper-based Prior Approval Form in illustrated in Figure 1.
+As a website developer, you have been asked by the university to update the current paper-based process
+to a digital process by implementing a digital version of the Prior Approval Form.
+Using human-centred design techniques, you should analyse this problem brief, the existing paper-based
+Prior Approval Form (and supplementary notes), to define the requirements and design. You should then
+implement the Electronic Prior Approval Web Form. It is not expected that the web form is a fully
+functioning system – but the front-end user interface should work as expected in the final product to
+demonstrate full UX functionality.
